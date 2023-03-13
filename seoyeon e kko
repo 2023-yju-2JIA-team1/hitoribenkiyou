@@ -1,0 +1,41 @@
+package 서연이꺼;
+
+import java.util.Scanner;
+
+public class movie {
+
+	public static void main(String[] args) {
+		final int size = 7;
+		int[] seats = new int[size];
+		
+		
+		while(true) { // 실행가능 //
+			System.out.println("----------------------------");
+			for(int i=0; i<size; i++)
+					System.out.print(i+1 + " | ");
+			System.out.println("\n ---------------------------");
+			for(int i=0; i<size; i++)
+					System.out.print(seats[i] + " | ");
+			System.out.println("\n ---------------------------");
+			
+			
+			System.out.println("원하는 좌석번호를 입력하세요 " + "\n(0을 입력 시, 종료됩니당!)");
+			Scanner scan = new Scanner(System.in);
+			int s = scan.nextInt();
+			if (s == 0)
+				break;
+			
+			if (seats[s-1] == 0) {
+				seats[s-1] = 1;
+				System.out.println("예약되었습니다.");
+			}
+			
+			else {
+				System.out.println("이미 예약된 자리 입니다!!" + "\n 다시 선택해주세요");
+			}
+			
+		}
+
+	}
+
+}
