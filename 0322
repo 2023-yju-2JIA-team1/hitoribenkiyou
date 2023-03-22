@@ -1,0 +1,19 @@
+scanner , if , else
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println(" ");
+        String sscore = scanner.next();
+        int score = Integer.parseInt(sscore);
+
+        if (score >= 80) {
+            System.out.println("日本語上手ですね～^^");
+        } else {
+            System.out.println("もっと勉強せよ!!!");
+        }
+
+    }
+}
