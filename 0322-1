@@ -48,7 +48,7 @@ if ( grade >=95) {
         }
         if (grade >= 90) {
             if (grade == 92) {
-                System.out.println("장학금면제 가능");
+                System.out.println("장학금면제 가능"); // 두가지 문장 출력 
             }
             System.out.println(" A");
         }
