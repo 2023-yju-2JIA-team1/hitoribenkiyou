@@ -17,3 +17,25 @@ class Main {
 
     }
 }
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+
+        String jjomsu = scn.nextLine();
+        int jomsu = Integer.parseInt(jjomsu);
+
+        if (jomsu < 80) {
+            System.out.println("큰일");
+        } else {
+            System.out.println("공부 좀 하셨네요");
+        }
+
+
+    }
+}
