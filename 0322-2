@@ -1,0 +1,37 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+       Scanner scn = new Scanner(System.in);
+
+        System.out.println("試験結果");
+
+        System.out.print(" 国語　: ");
+        int ゴ = scn.nextInt();
+
+        System.out.print(" 算数　: ");
+        int サ = scn.nextInt();
+
+        System.out.print("理解 : ");
+        int リ = scn.nextInt();
+
+        System.out.print("社会 : ");
+        int さ= scn.nextInt();
+
+        System.out.print("体育　: ");
+        int タ = scn.nextInt();
+
+
+
+
+        int sum = ゴ+サ+リ+さ+タ;
+
+        if (ゴ > 60 && サ>70 && リ>40 && さ>40 &&  タ>30  || sum>=400){
+         System.out.println("おめでとうございます。合格しました。");
+        } else {
+         System.out.println("すみません。");
+        }
+
+
+
+    }
+}
