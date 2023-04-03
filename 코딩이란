@@ -4,21 +4,21 @@ class java {
     boolean yesOrNo;
 
 
-    java() {
+    java() {   // 초기화
         math = 100;
         iyada = "우웩";
         yesOrNo = true;
     }
 
 
-    java(int m, String i, boolean y) {
+    java(int m, String i, boolean y) {   
         math = m;
         iyada = i;
         yesOrNo = y;
     }
 
 
-    void say() {
+    void say() {  // 함께 출력하는 메소드
         System.out.println("당신에게 코딩이란 ,,, \n " + "나의 레벨은? (최고 100) >> " + math + "  \n 코딩은 000 이다!  :  " + iyada + "   \n 오늘 푼 문제는  >> " + yesOrNo + " 였다!");
     }
 
@@ -43,7 +43,7 @@ public class coding {
 
         System.out.println("\n");
 
-        java j3 = new java(100,"재밌다",true);
+        java j3 = new java(100,"재밌다",true);   // 클래스 이용으로 간략하게 작성 ,  많은 문장 출력!
         j3.say();
 
     }
