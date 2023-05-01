@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>일본어 학습 - 로그인 페이지</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <section class="login-all"> 
+        <h1> 로그인 </h1>
+
+            <div class = "login-class"> 
+                <label for = "id"> 아이디 </label> 
+                <input type="text" name="id" id = "id" autocomplete="off">
+                         <!-- label = checkbox 하면 선택 가능함 우왕 -->
+            </div>
+            
+            <div class = "login-class"> 
+                <label for = "password"> 비밀번호 </label>  
+                <input type="text" name="id" id = "id" autocomplete="off">
+            </div>      
+
+
+
+
+        <div class="loginbutton">
+            <form>
+                <button id = "logbut" type="button" onclick="alert('로그인 할게용~')">로그인</button>
+                
+            </form>
+        </div>
+    </section>
+
+</head>
+
+<body>
+    <!--<div class = login-container> </div> -->
+</body>
+</html>
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+
+*{margin : 0; padding : 0; box-sizing : border-box;}
+
+
+body{
+    font-family: "한컴 말랑말랑 Regular";
+    display: flex;
+    justify-content: center;
+    /* 콘텐츠 (입력) 고정 */
+    align-items: center;
+    /*아이템 입력 위치 ,, 미실행 시 한컴됨*/
+    height: 100vh;
+    /* 높이 위치 이거도 안하면 배경 중복 및 애들 난리남*/
+    background-size: cover;
+    background-position: center;
+    /* background-justify-content 하면 고정됨 근데 크기 맞아서 안함*/
+    background-image:url(load.jpg);
+    text-size-adjust: 120px;
+    
+}
+
+
+
+
+
+/* 바디 실행 전 실행 되는 것 그러니까 ,,, 초기값? 그말임 */
+body:after{
+    /*요소 앞이나 뒤에 텍스트 이미지 등을 추가함 나는 배경색*/
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    /*background-color: rgba(40, 77, 63, 0.7);*/
+    text-size-adjust: 120px;
+}
+
+
+testss {
+
+}
